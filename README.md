@@ -59,4 +59,3 @@ The following cleanups are called at the end of the code or whenever a relevant 
 
     * *Showin output at will:* When you actually want to print something to the terminal, I call `copy_to_user` with the new data to send. Then, on the next call to device_read, it will resend the saved initial buffer content (which looks unchanged), forcing cat to wait again after printing the new data.
 
-* Could not configure input_pull_up resistors, instead, they are implemented in the hardware.
